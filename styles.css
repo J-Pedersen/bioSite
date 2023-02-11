@@ -1,0 +1,189 @@
+
+/* All Page Content */
+body 
+{
+    font-family: 'Oswald', Verdana, Arial, sans-serif ;
+    text-shadow: 2px 2px #162e2a5c;
+    margin: 0;
+    padding-top: 0;
+    background-color: #005244ea;
+}
+
+/* Title */
+h1
+{
+    text-align: center;
+    width: 100%; 
+    color: #ffffffd0;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds Text Outline */
+    text-shadow: 4px 4px #162e2a9a; /* Adds Text Drop Shadow */
+}
+
+/* Page Headings */
+h2
+{
+    color: #ffffffd0;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds Text Outline */
+    text-shadow: 4px 4px #162e2a9a; /* Adds Text Drop Shadow */
+    padding: 40px;  
+}
+
+/* Sub-Headings used throughout the Dreams and Hobbies pages */
+h3
+{
+    color: #ffffffd0;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds Text Outline */
+    text-shadow: 4px 4px #162e2a9a; /* Adds Text Drop Shadow */
+}
+
+/* refers to the entire Header element */
+header 
+{
+    height: 95px;
+    width: 100%;
+    background-color: #6b250af2; /* Sets the header area back ground color */
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centers the page title */
+    padding: 0 20px;
+}
+
+/* Refers to the navagation bar when hovered over */
+header:hover nav, header:active nav 
+{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    color: white; 
+}
+
+/* Changes here apply to all images */
+img 
+{
+    opacity: 0.8;
+    max-width: 100%;
+    height: auto;
+}
+
+/* this refers to the navagation bar */
+nav 
+{
+    display: none; /* hides nav bar */
+    flex-direction: row; /* changes nav bar to horizontal */
+}
+
+/* this refers to the actual links within the navagation bar */
+nav a 
+{
+    display: flex;
+    padding: 10px 20px;
+    color: #ffffff;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds text outline */
+    text-shadow: 4px 4px #162e2a9a; /* Adds Text Outline */
+    text-decoration: none; /* Removes Link Underlines */
+}
+
+/* All text content */
+p 
+{
+    color: black;
+}
+
+/* This is used to position the Paragraphs and images on the Dreams and Hobbies pages */
+section 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
+
+/* This uaed to shift the left align the paragraphs which have been shifted right for the layout on the Dreams and Hobbies pages*/
+.agn-lt
+{
+    text-align: left;
+}
+
+/* This is used to provide position ans styling to right side h2 headings on the Dreams, About and Hobbies pages */
+.head-rt
+{
+    padding-right: 50px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: right; 
+}
+
+/* This is used to provide position ans styling to left side h2 headings on the Dreams, About and Hobbies pages */
+.head-lt
+{
+    padding-left: 40px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+/* This is used on the About page to provide image placement and styling */
+.img-abt 
+{
+    width: 45%;
+    height: 100%;
+    display: block;
+}
+
+/* This is used to provide proper styling on the Dreams and Hobbies pages */
+.img-lt 
+{
+    width: 45%;
+    padding-left: 40px;
+    text-align: center;
+}
+
+/* This is used to provide proper styling on the Dreams and Hobbies pages */
+.img-rt 
+{
+    width: 45%;
+    padding-right: 40px;
+    text-align: center;
+}
+
+/* This is used on the About page to provide text placement and styling */
+.txt-abt 
+{
+    width: 45%;
+    padding-left: 40px;
+}
+
+/* This is used on the Dreams and the Hobbies pages some sections of text to provide proper placement */
+.txt-lt 
+{
+    width: 45%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* This is used on the Dreams and the Hobbies pages to align sections of text to the right side of the pages and provide proper placement */
+.txt-rt 
+{
+    width: 45%;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: right;
+}
+
+/* This is used on the Dreams, About and Hobbies pages to contain everything after the Header */
+#container 
+{
+    width: 100%;
+}
+
+/* This is used on the About Page to the text and image */
+#profile 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
