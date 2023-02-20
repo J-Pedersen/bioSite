@@ -180,7 +180,7 @@ nav ul li a:hover {
     background-color: #B53300;
     color: #ffffff7e;
   }
-
+ 
 }
 
 /* Style the h2 */
@@ -241,6 +241,7 @@ p a:hover {
   flex: 1; /* Fill available horizontal space */
   align-self: flex-start; /* Align to the top of the container */
   padding: 10px;
+  overflow: auto;
 }
 
 /* Style for container with flex layout */
