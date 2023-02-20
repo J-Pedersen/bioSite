@@ -243,7 +243,8 @@ p a:hover {
   padding: 10px;
 }
 
-.txt-lt p, .txt-rt p {
+.scroll {
+  height: 570px;
   overflow: auto;
 }
 
