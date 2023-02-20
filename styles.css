@@ -247,7 +247,7 @@ p a:hover {
 
 /* Style for the about section text */
 .txt-abt {
-  width: 60%; /* Set the width to 50% of the parent element */
+  width: 65%; /* Set the width to 50% of the parent element */
 }
 
 /* Style for the text section */
@@ -306,6 +306,7 @@ img {
   background-size: cover; /* Ensures image covers entire container */
   background-position: center; /* Centers image horizontally and vertically */
   padding-left: 30px;
+  padding-right:30px;
 }
 
 /* Style for image container */
