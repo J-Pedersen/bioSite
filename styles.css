@@ -1,189 +1,340 @@
+/*XXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XX Page Wide Start XX */
+/*XXXXXXXXXXXXXXXXXXXXXXXXX */
 
-/* All Page Content */
-body 
-{
-    font-family: 'Oswald', Verdana, Arial, sans-serif ;
-    text-shadow: 2px 2px #162e2a5c;
-    margin: 0;
-    padding-top: 0;
-    background-color: #005244ea;
+/* Resets default margin and padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Title */
-h1
-{
+/* Set page height to 100% */
+html,
+body {
+  height: 100%;
+}
+
+/* Set body font properties */
+body {
+  font-family: 'Oswald', Verdana, Arial, sans-serif ;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+
+/* Style the container element */
+.container {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XX Page Wide End XX */
+/*XXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+
+/*XXXXXXXXXXXXXXXXXXX */
+/* XX Header Start XX */
+/*XXXXXXXXXXXXXXXXXXX */
+
+/* h1 Styles */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  -webkit-text-stroke: 1px #B53300; /* Adds text outline */
+  text-shadow: 2px 2px #000000;
+  color: #ffffff;
+  line-height: 100px;
+}
+
+/* Header Styles */
+header {
+  height: 100px;
+  background-color: #162E2A;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.47);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Header Accent line */
+header::after {
+  content: ""; /* No content to be displayed */
+  display: block; /* Display as a block element */
+  height: 4px; /* Set the height to 4px */
+  width: 100%; /* Set the width to 100% of the parent element */
+  background-color: #B53300; /* Set the background color to a shade of red */
+  position: absolute; /* Position the element absolutely */
+  bottom: 0; /* Align the element to the bottom of the parent element */
+}
+
+/* Hides the Menu */
+#main-header nav {
+  opacity: 0; /* Set the opacity to 0 */
+  transition: opacity 0.3s ease-in-out; /* Add a transition effect to the opacity property */
+}
+
+/* Shows the Menu on Hover */
+#main-header:hover nav {
+  opacity: 1; /* Set the opacity to 1 on hover */
+}
+
+/* Style the nav element */
+nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+  align-items: flex-end;
+  flex-direction: column;
+  position: absolute;
+  bottom: 4px;
+  left: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+}
+
+/* Style the nav links */
+nav a {
+  text-decoration: none; 
+  display: block;
+  color: #162E2A;
+  text-shadow: 1px 1px #B53300;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+/* Style the nav list */
+nav ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+
+/* Style the nav links on hover */
+nav ul li a:hover {
+  background-color: #B53300;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 680px) {
+ 
+  h1 {
     text-align: center;
-    width: 100%; 
-    color: #ffffffd0;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds Text Outline */
-    text-shadow: 4px 4px #162e2a9a; /* Adds Text Drop Shadow */
-}
-
-/* Page Headings */
-h2
-{
-    color: #ffffffd0;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds Text Outline */
-    text-shadow: 4px 4px #162e2a9a; /* Adds Text Drop Shadow */
-    padding: 40px;  
-}
-
-/* Sub-Headings used throughout the Dreams and Hobbies pages */
-h3
-{
-    color: #ffffffd0;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds Text Outline */
-    text-shadow: 4px 4px #162e2a9a; /* Adds Text Drop Shadow */
-}
-
-/* refers to the entire Header element */
-header 
-{
-    height: 95px;
-    width: 100%;
-    background-color: #6b250af2; /* Sets the header area back ground color */
-    position: relative;
     z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Centers the page title */
-    padding: 0 20px;
-}
+    padding-left: 50px;
+  }
 
-/* Refers to the navagation bar when hovered over */
-header:hover nav, header:active nav 
-{
+  header {
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header:hover nav,
+  header:focus-within nav {
+    display: flex;
+  }
+
+  header:hover nav,
+  header:active nav {
+    display: flex;
+  }
+
+  nav {
+    display: none;
     position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    color: white; 
-}
-
-/* Changes here apply to all images */
-img 
-{
-    opacity: 0.8;
-    max-width: 100%;
+    top: 0px;
+    left: 2px;
     height: auto;
-}
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
 
-/* this refers to the navagation bar */
-nav 
-{
-    display: none; /* hides nav bar */
-    flex-direction: row; /* changes nav bar to horizontal */
-}
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-/* this refers to the actual links within the navagation bar */
-nav a 
-{
-    display: flex;
-    padding: 10px 20px;
-    color: #ffffff;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds text outline */
-    text-shadow: 4px 4px #162e2a9a; /* Adds Text Outline */
-    text-decoration: none; /* Removes Link Underlines */
-}
+  nav ul li {
+    width: 100px;
+  }
 
-/* All text content */
-p 
-{
-    color: black;
-}
-
-/* This is used to position the Paragraphs and images on the Dreams and Hobbies pages */
-section 
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 300px;
-}
-
-/* This uaed to shift the left align the paragraphs which have been shifted right for the layout on the Dreams and Hobbies pages*/
-.agn-lt
-{
-    text-align: left;
-}
-
-/* This is used to provide position ans styling to right side h2 headings on the Dreams, About and Hobbies pages */
-.head-rt
-{
-    padding-right: 50px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    text-align: right; 
-}
-
-/* This is used to provide position ans styling to left side h2 headings on the Dreams, About and Hobbies pages */
-.head-lt
-{
-    padding-left: 40px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-}
-
-/* This is used on the About page to provide image placement and styling */
-.img-abt 
-{
-    width: 45%;
-    height: 100%;
+  nav a {
     display: block;
-}
-
-/* This is used to provide proper styling on the Dreams and Hobbies pages */
-.img-lt 
-{
-    width: 45%;
-    padding-left: 40px;
     text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    
+  }
+
+  nav ul li a {
+    display: block;
+    color: #162E2A;
+    text-shadow: 1px 1px #B53300;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    padding: 4px;
+  }
+
+  nav ul li a:hover {
+    background-color: #B53300;
+    color: #ffffff7e;
+  }
+  
 }
 
-/* This is used to provide proper styling on the Dreams and Hobbies pages */
-.img-rt 
-{
-    width: 45%;
-    padding-right: 40px;
-    text-align: center;
+/*XXXXXXXXXXXXXXXXXXX */
+/* XX  Header End  XX */
+/*XXXXXXXXXXXXXXXXXXX */
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XX  Text Styling Start  XX */
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* Style the h2 */
+h2 {
+  font-size: 32px;
+  color: #B53300;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds Text Outline */
+  text-shadow: 4px 4px #162e2a50; /* Adds Text Drop Shadow */ 
+  padding-top: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-/* This is used on the About page to provide text placement and styling */
-.txt-abt 
-{
-    width: 45%;
-    padding-left: 40px;
+/* Style for h3 */
+h3 {
+  font-size: 28px;
+  color: #B53300; /* Sets text color */
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds text outline */
+  text-shadow: 4px 4px #162e2a50; /* Adds text drop shadow */
+  padding-top: 10px;
 }
 
-/* This is used on the Dreams and the Hobbies pages some sections of text to provide proper placement */
-.txt-lt 
-{
-    width: 45%;
-    padding-left: 40px;
-    padding-right: 40px;
+/* Style for paragraphs */
+p {
+  font-size: 18px;
 }
 
-/* This is used on the Dreams and the Hobbies pages to align sections of text to the right side of the pages and provide proper placement */
-.txt-rt 
-{
-    width: 45%;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-align: right;
+/* Style for links in paragraphs */
+p a {
+  color: #B53300; /* Sets text color */
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds text outline */
+  text-shadow: 4px 4px #162e2a50; /* Adds text drop shadow */
+  text-decoration: none; /* Removes the  underline */
 }
 
-/* This is used on the Dreams, About and Hobbies pages to contain everything after the Header */
-#container 
-{
-    width: 100%;
+/* Style for visited links in paragraphs */
+p a:visited {
+  color: #B53300; /* Sets text color */
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds text outline */
+  text-shadow: 4px 4px #162e2a50; /* Adds text drop shadow */
 }
 
-/* This is used on the About Page to the text and image */
-#profile 
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+/* Style for hovered links in paragraphs */
+p a:hover {
+  color: #005244;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds text outline */
+  text-shadow: 4px 4px #162e2a50; /* Adds text drop shadow */
+  text-decoration: underline;
 }
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XX  Text Styling End  XX */
+/*XXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XX  Content Positioning Start  XX */
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* Style for the about section text */
+.txt-abt {
+  width: 60%; /* Set the width to 50% of the parent element */
+}
+
+/* Style for the text section */
+.txt-lt, .txt-rt {
+  flex: 1; /* Fill available horizontal space */
+  align-self: flex-start; /* Align to the top of the container */
+  padding: 10px;
+}
+
+/* Style for container with flex layout */
+.flex-lt {
+  display: flex; /* Sets display to flex */
+  flex-direction: row; /* Sets main axis to be horizontal */
+  align-items: center; /* Centers items vertically */
+  height: 800px;
+  padding: 30px;
+}
+
+/* Style for container with flex layout (reversed) */
+.flex-rt {
+  display: flex; /* Sets display to flex */
+  flex-direction: row-reverse; /* Sets main axis to be horizontal and reversed */
+  align-items: center; /* Centers items vertically */
+  height: 800px;
+  padding: 30px;
+}
+
+/* Style for img element */
+img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover; /* Ensures image covers entire container */
+  display: block; /* Sets display to block to remove extra spacing */
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Adds box shadow */
+}
+
+/* Style for About page image */
+.img-abt {
+  max-width: 50%;
+  background-size: cover; /* Ensures image covers entire container */
+  background-position: center; /* Centers image horizontally and vertically */
+  padding-left: 30px;
+}
+
+/* Style for image container */
+.img-lt, .img-rt {
+  flex: 1; /* Fill available horizontal space */
+  max-width: 50%; /* Limit maximum width to 50% */
+  height: 800px; /* Set a fixed height of 800px */
+  background-size: cover; /* Scale the image to cover the entire container */
+  background-position: center; /* Center the image within the container */
+  padding: 30px;
+}
+
+/* Style for the profile section */
+#profile {
+  display: flex; /* Display as a flex container */
+  flex-direction: row-reverse; /* Reverse the order of the flex items */
+  margin: 30px;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XX  Content Positioning End  XX */
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+
+
+
+
