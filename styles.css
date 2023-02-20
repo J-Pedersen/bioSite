@@ -1,6 +1,3 @@
-/*XXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XX Page Wide Start XX */
-/*XXXXXXXXXXXXXXXXXXXXXXXXX */
 
 /* Resets default margin and padding */
 * {
@@ -23,23 +20,12 @@ body {
   color: #000000;
 }
 
-
 /* Style the container element */
 .container {
   display: flex;
   justify-content: flex-start;
   height: 100%;
 }
-
-/*XXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XX Page Wide End XX */
-/*XXXXXXXXXXXXXXXXXXXXXXXXX */
-
-
-
-/*XXXXXXXXXXXXXXXXXXX */
-/* XX Header Start XX */
-/*XXXXXXXXXXXXXXXXXXX */
 
 /* h1 Styles */
 h1 {
@@ -197,15 +183,6 @@ nav ul li a:hover {
   
 }
 
-/*XXXXXXXXXXXXXXXXXXX */
-/* XX  Header End  XX */
-/*XXXXXXXXXXXXXXXXXXX */
-
-
-/*XXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XX  Text Styling Start  XX */
-/*XXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
 /* Style the h2 */
 h2 {
   font-size: 32px;
@@ -254,15 +231,6 @@ p a:hover {
   text-decoration: underline;
 }
 
-/*XXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XX  Text Styling End  XX */
-/*XXXXXXXXXXXXXXXXXXXXXXXXX */
-
-
-/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XX  Content Positioning Start  XX */
-/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
 /* Style for the about section text */
 .txt-abt {
   width: 60%; /* Set the width to 50% of the parent element */
@@ -281,7 +249,7 @@ p a:hover {
   flex-direction: row; /* Sets main axis to be horizontal */
   align-items: center; /* Centers items vertically */
   height: 800px;
-  padding: 30px;
+  padding: 5px 30px;
 }
 
 /* Style for container with flex layout (reversed) */
@@ -290,7 +258,7 @@ p a:hover {
   flex-direction: row-reverse; /* Sets main axis to be horizontal and reversed */
   align-items: center; /* Centers items vertically */
   height: 800px;
-  padding: 30px;
+  padding: 5px 30px;
 }
 
 /* Style for img element */
@@ -328,13 +296,3 @@ img {
   flex-direction: row-reverse; /* Reverse the order of the flex items */
   margin: 30px;
 }
-
-/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XX  Content Positioning End  XX */
-/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-
-
-
-
-
