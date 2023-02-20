@@ -241,6 +241,9 @@ p a:hover {
   flex: 1; /* Fill available horizontal space */
   align-self: flex-start; /* Align to the top of the container */
   padding: 10px;
+}
+
+.txt-lt p, .txt-rt p {
   overflow: auto;
 }
 
