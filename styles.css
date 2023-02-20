@@ -247,14 +247,14 @@ p a:hover {
 
 /* Style for the about section text */
 .txt-abt {
-  width: 65%; /* Set the width to 50% of the parent element */
+  width: 63%; /* Set the width to 50% of the parent element */
 }
 
 /* Style for the text section */
 .txt-lt, .txt-rt {
   flex: 1; /* Fill available horizontal space */
   align-self: flex-start; /* Align to the top of the container */
-  padding: 10px;
+  padding: 30px;
 }
 
 .scroll {
@@ -277,7 +277,7 @@ p a:hover {
   flex-direction: row; /* Sets main axis to be horizontal */
   align-items: center; /* Centers items vertically */
   height: 800px;
-  padding: 5px 30px;
+  padding: 5px 20px 20px 5px;
 }
 
 /* Style for container with flex layout (reversed) */
@@ -286,7 +286,7 @@ p a:hover {
   flex-direction: row-reverse; /* Sets main axis to be horizontal and reversed */
   align-items: center; /* Centers items vertically */
   height: 800px;
-  padding: 5px 30px;
+  padding: 5px 20px 20px 5px;
 }
 
 /* Style for img element */
