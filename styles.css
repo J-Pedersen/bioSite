@@ -180,6 +180,11 @@ nav ul li a:hover {
     background-color: #B53300;
     color: #ffffff7e;
   }
+
+  .scroll {
+    height: 370px;
+    overflow: auto;
+  }
  
 }
 
