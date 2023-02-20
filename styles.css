@@ -223,6 +223,7 @@ h3 {
   color: #B53300; /* Sets text color */
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds text outline */
   text-shadow: 4px 4px #162e2a50; /* Adds text drop shadow */
+  padding-top: 10px;
 }
 
 /* Style for paragraphs */
