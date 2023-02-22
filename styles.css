@@ -70,8 +70,9 @@ header::after {
 
 /* Hides the Menu */
 #main-header nav {
-  opacity: 0; /* Set the opacity to 0 */
-  transition: opacity 0.3s ease-in-out; /* Add a transition effect to the opacity property */
+  opacity: 0.2; /* Set the opacity */
+  transition: opacity 0.5s ease-in-out; /* Add a transition effect to the opacity property */
+  background-color: #ffffff;
 }
 
 /* Shows the Menu on Hover */
@@ -81,6 +82,7 @@ header::after {
 
 /* Style the nav element */
 nav {
+  border-top-right-radius: 15px;
   display: flex;
   justify-content: flex-start;
   flex-grow: 1;
@@ -116,10 +118,23 @@ nav ul {
 nav ul li a:hover {
   background-color: #B53300;
   color: #FFFFFF;
+  border-top-right-radius: 15px;
 }
 
 @media only screen and (max-width: 800px) {
  
+  /* Hides the Menu */
+#main-header nav {
+  opacity: 0.2; /* Set the opacity */
+  transition: opacity 0.5s ease-in-out; /* Add a transition effect to the opacity property */
+  background-color: #ffffff;
+}
+
+/* Shows the Menu on Hover */
+#main-header:hover nav {
+  opacity: 1; /* Set the opacity to 1 on hover */
+}
+
   h1 {
     text-align: center;
     z-index: 1;
@@ -143,7 +158,7 @@ nav ul li a:hover {
   }
 
   nav {
-    display: none;
+    display: flex;
     position: absolute;
     top: 0px;
     left: 2px;
@@ -152,6 +167,7 @@ nav ul li a:hover {
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 999;
+    border-top-right-radius: 0px;
   }
 
   nav ul {
@@ -183,6 +199,7 @@ nav ul li a:hover {
   nav ul li a:hover {
     background-color: #B53300;
     color: #ffffff7e;
+    border-top-right-radius: 0px;
   }
 
   .scroll {
