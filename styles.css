@@ -17,6 +17,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #000000;
+  background-color: rgb(175, 182, 189);
 }
 
 /* For non-WebKit browsers */
@@ -72,7 +73,7 @@ header::after {
 #main-header nav {
   opacity: 0.2; /* Set the opacity */
   transition: opacity 0.5s ease-in-out; /* Add a transition effect to the opacity property */
-  background-color: #ffffff;
+  background-color: rgb(175, 182, 189);
 }
 
 /* Shows the Menu on Hover */
@@ -91,7 +92,7 @@ nav {
   position: absolute;
   bottom: 4px;
   left: 2px;
-  background-color: #ffffff;
+  background-color: rgb(175, 182, 189);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: auto;
 }
@@ -127,7 +128,7 @@ nav ul li a:hover {
 #main-header nav {
   opacity: 0.2; /* Set the opacity */
   transition: opacity 0.5s ease-in-out; /* Add a transition effect to the opacity property */
-  background-color: #ffffff;
+  background-color: rgb(175, 182, 189);
 }
 
 /* Shows the Menu on Hover */
@@ -164,7 +165,7 @@ nav ul li a:hover {
     left: 2px;
     height: auto;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: rgb(175, 182, 189);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 999;
     border-top-right-radius: 0px;
@@ -237,14 +238,11 @@ h3 {
 /* Style for paragraphs */
 p {
   font-size: 18px;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds Text Outline */
-  text-shadow: 4px 4px #162e2a50; /* Adds Text Drop Shadow */ 
 }
 p:first-letter {
   font-size: 20px;
   color: #B53300;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds Text Outline */
-  text-shadow: 4px 4px #162e2a50; /* Adds Text Drop Shadow */ 
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.58); /* Adds Text Outline */ 
   padding-left: 10px;
 }
 
