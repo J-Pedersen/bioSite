@@ -38,7 +38,7 @@ h1 {
   font-weight: bold;
   -webkit-text-stroke: 1px #B53300; /* Adds text outline */
   text-shadow: 2px 2px #000000;
-  color: #ffffff;
+  color: rgb(175, 182, 189);
   line-height: 100px;
 }
 
@@ -118,7 +118,7 @@ nav ul {
 /* Style the nav links on hover */
 nav ul li a:hover {
   background-color: #B53300;
-  color: #FFFFFF;
+  color: rgb(175, 182, 189);
   border-top-right-radius: 15px;
 }
 
@@ -183,7 +183,7 @@ nav ul li a:hover {
   nav a {
     display: block;
     text-align: center;
-    color: #FFFFFF;
+    color: rgb(175, 182, 189);
     text-decoration: none;
     
   }
